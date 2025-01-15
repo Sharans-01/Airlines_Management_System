@@ -1,0 +1,10 @@
+CREATE TABLE Flight(flightId int(11) NOT NULL,flightTerm varchar(45) DEFAULT NULL,flightname varchar(20) DEFAULT NULL,arrival varchar(20) DEFAULT NULL,derparture varchar(20) default null, duration int(10), cost int(10), PRIMARY KEY (flightId)) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE Passenger (name varchar(45) NOT NULL,dob date DEFAULT NULL,passnum bigint(20) DEFAULT NULL,aadhar int(11) DEFAULT NULL,nationality varchar(20),PRIMARY KEY (name)) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE essential (package_weight int(10) NOT NULL,foods varchar(20) not NULL,ordid1 varchar(20) DEFAULT NULL,drinks varchar(20) DEFAULT NULL,ordid2 varchar(20) DEFAULT NULL,PRIMARY KEY (foods)) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE Ticket (ticketNum int(11) NOT NULL,seatNum int(11) DEFAULT NULL,sFrom varchar(20),too varchar(20), PRIMARY KEY (ticketNum)) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+create table admins(user_id varchar(20) not null,password varchar(20),primary key(user_id));
